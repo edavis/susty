@@ -102,7 +102,7 @@ add_action( 'after_setup_theme', 'susty_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function susty_scripts() {
-	wp_enqueue_style( 'susty-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'susty-style', get_template_directory_uri() . '/build/style.min.css' );
 
 	wp_deregister_script( 'wp-embed' );
 
